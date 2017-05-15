@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search bar with category</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
+                <div class="input-group">
+                    <div class="input-group-btn search-panel">
+                        <button id="category-btn" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span id="search_concept">All</span> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Augers</a></li>
+                            <li><a href="#">Concrete Tools</a></li>
+                            <li><a href="#">Compactors</a></li>
+                            <li><a href="#">Demolition Tools</a></li>
+                            <li><a href="#">Drain Cleaners and Plumbing Tools</a></li>
+                            <li><a href="#">Floor Cleaners</a></li>
+                            <li><a href="#">Floor Care & Refinishers</a></li>
+                            <li><a href="#">Generators</a></li>
+                            <li><a href="#">Air Conditioners and Heaters</a></li>
+                            <li><a href="#">Large Equipment</a></li>
+                            <li><a href="#">Lawn & Garden Equipment</a></li>
+                            <li><a href="#">Moving and Lifting Equipment</a></li>
+                            <li><a href="#">Air Compressors and Nail Guns</a></li>
+                            <li><a href="#">Power Tools</a></li>
+                            <li><a href="#">Pressure Washers</a></li>
+                            <li><a href="#">Restoration & Remediation</a></li>
+                            <li><a href="#">Tile Saws</a></li>
+                            <li><a href="#">Wall & Painting Tools</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#all">All</a></li>
+                        </ul>
+                    </div>
+                    <input type="hidden" name="search_param" value="all" id="search_param">
+                    <input id="search-txt" type="text" class="form-control" name="x" placeholder="Looking for...">
+                    <span class="input-group-btn">
+                        <button id="search-btn" class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
